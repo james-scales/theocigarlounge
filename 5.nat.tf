@@ -8,7 +8,7 @@ resource "google_compute_router_nat" "usnat" {
   nat_ip_allocate_option             = "MANUAL_ONLY"
 
   subnetwork {
-    name                    = google_compute_subnetwork.uslizzo051025.id
+    name                    = google_compute_subnetwork.uslizzo.id
     source_ip_ranges_to_nat = ["ALL_IP_RANGES"]
   }
 
